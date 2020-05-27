@@ -89,5 +89,6 @@ float			compute_lighting(t_vector dir, t_trace_data *trace,
 		intensity += compute_intensity(dir, trace, curr_light, scene);
 		curr_light = curr_light->prev;
 	}
+	intensity = (intensity > 1 ? 1 : intensity);
 	return (intensity);
 }
