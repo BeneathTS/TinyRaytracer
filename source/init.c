@@ -20,6 +20,7 @@ t_objects	*object_init(const char obj_type, t_objects *prev)
 		exit(-1);
 	obj->type = obj_type;
 	obj->radius = 0;
+	obj->position = (t_vector){0, 0, 0};
 	obj->direction = (t_vector){0, 0, 0};
 	obj->reflective = -1;
 	obj->specular = -1;
@@ -40,6 +41,7 @@ t_camera	*cam_init(void)
 	if (!(cam = (t_camera *)malloc(sizeof(t_camera))))
 		exit(-1);
 	cam->position = (t_vector){0, 0, 0};
+	cam->direction = (t_vector){0, 0, 0};
 	cam->viewport.x = (float)WIDTH / HEIGHT;
 	cam->viewport.y = 1;
 	cam->viewport.z = 1;
@@ -52,6 +54,9 @@ t_light		*light_init(t_light *prev)
 
 	if (!(light = (t_light*)malloc(sizeof(t_light))))
 		exit(-1);
+	light->position = (t_vector){0, 0, 0};
+	light->direction = (t_vector){0, 0, 0};
+	light->intencity = 0;
 	light->next = NULL;
 	light->prev = prev;
 	return (light);

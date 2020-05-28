@@ -16,8 +16,8 @@
 # define WIDTH 1280
 # define HEIGHT 720
 
-# define DEPTH 100000000.0f
-# define MIRROR_LIM 30
+# define DEPTH 90.0f
+# define MIRROR_LIM 10
 
 # define SCENE_NAME "scenes/scene1"
 # define PROG_NAME "Ray Tracer"

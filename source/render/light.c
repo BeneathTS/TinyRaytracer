@@ -56,7 +56,9 @@ static float	compute_intensity(t_vector dir, t_trace_data *trace,
 	t_lim	limits;
 
 	intensity = 0.0f;
-	limits = (t_lim){0.0001f, DEPTH, 0};
+	limits = (t_lim){0.001f, DEPTH, 0};
+
+
 	if (curr_light->type == ambient)
 		intensity += curr_light->intencity;
 	else
@@ -67,7 +69,8 @@ static float	compute_intensity(t_vector dir, t_trace_data *trace,
 			limits.max = 1.0f;
 		}
 		else
-			trace->light_dir = curr_light->direction;
+			trace->light_dir = vec_normalize(curr_light->direction);
+				
 		if (check_for_shadow(trace->i_point, trace->light_dir, scene, limits))
 			return (intensity);
 		intensity += diffusive_light(trace, curr_light);

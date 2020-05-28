@@ -13,8 +13,15 @@ light:
 light:
 {
 	type: point;
-	intensity: 0.7;
+	intensity: 0.3;
 	position: 0, -4, 0;
+}
+
+light:
+{
+	type: directional;
+	intensity: 0.7;
+	direction: -1, -0.2, 0;
 }
 
 sphere:
@@ -93,7 +100,7 @@ cylinder:
 {
 	position: 0, 0, 16;
 	direction: -1, 1, 0;
-	radius: 1;
+	radius: 1.5;
 	specular: 19;
 	reflective: 0.5;
 	color: #FF43AC;
