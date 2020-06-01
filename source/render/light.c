@@ -44,7 +44,7 @@ static float	reflection_light(t_vector dir, t_trace_data *trace,
 	r_dot_d = vec_dot(reflected_ray, vec_mult_num(dir, -1.0f));
 	if (r_dot_d <= 0.0f)
 		return (0.0f);
-	cos_a = r_dot_d / vec_length(reflected_ray);
+	cos_a = r_dot_d / (vec_length(dir) * vec_length(reflected_ray));
 	return (light_source->intencity *
 			powf(cos_a, trace->obj.close_obj->specular));
 }

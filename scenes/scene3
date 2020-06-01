@@ -1,7 +1,7 @@
 cam:
 {
-	position: 0, 0, 36;
-	direction: 0, 180, 0;
+	position: 0, 0, -33;
+	direction: 0, 0, 0;
 }
 
 light:
@@ -21,7 +21,7 @@ light:
 {
 	type: directional;
 	intensity: 0.7;
-	direction: 1, -0.3, 0;
+	direction: 0, 0, -1;
 }
 
 sphere:
@@ -100,18 +100,8 @@ cylinder:
 {
 	position: 0, 0, 16;
 	direction: -1, 1, 0;
-	radius: 1.5;
-	specular: 19;
-	reflective: 0.5;
-	color: #FF43AC;
-}
-
-cone:
-{
-	position: 2, 0, 16;
-	direction: 1, 1, 0;
 	radius: 1;
 	specular: 19;
 	reflective: 0.5;
-	color: #a3afff;
+	color: #FF43AC;
 }

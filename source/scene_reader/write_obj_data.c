@@ -52,9 +52,10 @@ float		get_float_value(const char *num)
 	if (num[ct] == '-' || num[ct] == '+')
 		if (num[ct++] == '-')
 			znk = -1;
-	while (num[ct] && num[ct] != '.')
+	while (num[ct] >= '0' && num[ct] <= '9' && num[ct] != '.')
 		res = (res * 10) + (num[ct++] - '0');
-	if (!num[ct])
+	if (!num[ct] || (num[ct] != '.' && 
+	(num[ct] <= '0' || num[ct] >= '9')))
 		return (res * znk);
 	ct = ft_strlen(num);
 	while (num[--ct] != '.' && ct > 0)

@@ -22,7 +22,7 @@ static void	write_data(const char data_type, const char **data, t_scene *scene)
 	}
 	else if (data_type == direction)
 	{
-		scene->cam->direction.x = get_float_value(data[0]) * 0.0175f;
+		scene->cam->direction.x = -get_float_value(data[0]) * 0.0175f;
 		scene->cam->direction.y = get_float_value(data[1]) * 0.0175f;
 		scene->cam->direction.z = get_float_value(data[2]) * 0.0175f;
 	}

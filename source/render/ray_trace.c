@@ -69,7 +69,7 @@ t_color				trace_ray(t_vector point, t_vector dir, t_scene *scene,
 		return ((t_color){0x0, 0x0, 0x0});
 	trace.i_point = vec_sum(point, vec_mult_num(dir, trace.obj.param));
 	trace.normal = calculate_normal(point, dir, &trace, trace.obj.close_obj);
-	trace.i_point = vec_sum(trace.i_point, vec_mult_num(trace.normal, 0.1f));
+	trace.i_point = vec_sum(trace.i_point, vec_mult_num(trace.normal, 0.01f));
 	color_intencity = compute_lighting(dir, &trace, scene);
 	basic_color = color_mult_num(trace.obj.close_obj->color, color_intencity);
 	if (lim.recursion <= 0 || trace.obj.close_obj->reflective <= 0)

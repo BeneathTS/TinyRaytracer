@@ -1,0 +1,119 @@
+cam:
+{
+	position: 0, 0, -2;
+	direction: 0--, 0, 0;
+}
+
+light:
+{
+	type: ambient;
+	intensity: 0.13;
+}
+
+light:
+{
+	type: point;
+	intensity: 0.7;
+	position: 0, -2.7, 7.5;
+}
+
+plane:
+{
+	position: 0, 3, 0;
+	direction: 0, -1, 0;
+	specular: 0;
+	reflective: 0.0;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: 0, -3, 0;
+	direction: 0, 1, 0;
+	specular: 0;
+	reflective: 0.0;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: 0, 0, 9;
+	direction: 0, 0, -1;
+	specular: 0;
+	reflective: 0.0;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: -4, 0, 0;
+	direction: 1, 0, 0;
+	specular: 5;
+	reflective: 0.0;
+	color: #FF0000;
+}
+
+plane:
+{
+	position: 4, 0, 0;
+	direction: -1, 0, 0;
+	specular: 5;
+	reflective: 0.0;
+	color: #0000FF;
+}
+
+plane:
+{
+	position: 0, 0, -3.5;
+	direction: 0, 0, 1;
+	specular: 1;
+	reflective: 0.4;
+	color: #834da1;
+}
+
+sphere:
+{
+	position: 3, 2, 6;
+	radius: 1;
+	specular: 70;
+	reflective: 0.9;
+	color: #ffa3fd;
+}
+
+sphere:
+{
+	position: -3, 2.2, 6.4;
+	radius: 0.8;
+	specular: 70;
+	reflective: 0.9;
+	color: #6e65b5;
+}
+
+sphere:
+{
+	position: 0, 2, -2;
+	radius: 1;
+	specular: 70;
+	reflective: 0.0;
+	color: #6e65b5;
+}
+
+cylinder:
+{
+	position: 0, -2.4, -3.2;
+	direction: -1, 1, 0;
+	radius: 1;
+	specular: 1;
+	reflective: 0.4;
+	color: #834da1;
+}
+
+cylinder:
+{
+	position: 0, -2.4, -3.2;
+	direction: -1, -1, 0;
+	radius: 1;
+	specular: 1;
+	reflective: 0.4;
+	color: #834da1;
+}

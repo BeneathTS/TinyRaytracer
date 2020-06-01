@@ -19,8 +19,8 @@ static t_vector	get_viewport_coord(t_scene *scene, int canv_x, int canv_y)
 	viewport_coord.x = canv_x * scene->cam->viewport.x / WIDTH;
 	viewport_coord.y = canv_y * scene->cam->viewport.y / HEIGHT;
 	viewport_coord.z = scene->cam->viewport.z;
-	viewport_coord = vec_normalize(vec_rotate(viewport_coord,
-										scene->cam->direction));
+	viewport_coord = vec_rotate(viewport_coord,
+										scene->cam->direction);
 	return (viewport_coord);
 }
 
