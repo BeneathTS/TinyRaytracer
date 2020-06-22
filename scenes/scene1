@@ -1,6 +1,6 @@
 cam:
 {
-	position: 0, 0, -33;
+	position: 0, 0, -13;
 	direction: 0, 0, 0;
 }
 
