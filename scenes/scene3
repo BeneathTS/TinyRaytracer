@@ -1,107 +1,433 @@
 cam:
 {
-	position: 0, 0, -33;
-	direction: 0, 0, 0;
-}
-
-light:
-{
-	type: ambient;
-	intensity: 0;
+	position: -0.6, 0, 0;
+	direction: 0, 16, 0;
 }
 
 light:
 {
 	type: point;
-	intensity: 0.7;
-	position: 0, -4, 0;
+	intensity: 0.0;
+	position: 0, 0, 1.5;
 }
 
 light:
 {
-	type: directional;
-	intensity: 0.7;
-	direction: 0, 0, -1;
-}
-
-sphere:
-{
-	position: 2, 4, 8;
-	radius: 1;
-	specular: 500;
-	reflective: 0.2;
-	color: #888888;
-}
-
-sphere:
-{
-	position: 6.5, -2, 7;
-	radius: 2;
-	specular: 500;
-	reflective: 0.85;
-	color: #ffa3fd;
-}
-
-sphere:
-{
-	position: -3, 0, 8;
-	radius: 1;
-	specular: 10;
-	reflective: 0.3;
-	color: #38cFaa;
-}
-
-sphere:
-{
-	position: 3, 2, 10;
-	radius: 1.0;
-	specular: 10;
-	reflective: 0.5;
-	color: #eb4034;
-}
-
-sphere:
-{
-	position: 3, 2, 10;
-	radius: 1;
-	specular: 10;
-	reflective: 0.5;
-	color: #eb4034;
-}
-
-sphere:
-{
-	position: -6.8, 2, 6.6;
-	radius: 1.3;
-	specular: 10;
-	reflective: 0.3;
-	color: #c034eb;
-}
-
-sphere:
-{
-	position: -5, -3.5, 7;
-	radius: 1.5;
-	specular: 10;
-	reflective: 0.3;
-	color: #eb9f34;
+	type: point;
+	intensity: 0.4;
+	position: 0, 0, 3.5;
 }
 
 plane:
 {
-	position: 0, 5, 0;
+	position: 0, -0.5, 0;
+	direction: 0, 1, 0;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: 0, 0, 7;
+	direction: 0, 0, -1;
+	reflective: 0.92;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: 0, 0, 0.2;
+	direction: 0, 0, 1;
+	reflective: 0.92;
+	color: #FFFFFF;
+}
+
+plane:
+{
+	position: 0, 0.5, 0;
 	direction: 0, -1, 0;
-	specular: 40;
-	reflective: 0.1;
-	color: #555555;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
 }
 
 cylinder:
 {
-	position: 0, 0, 16;
-	direction: -1, 1, 0;
+	position: -1, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 1.5;
+	direction: 0, 1, 0;
 	radius: 1;
-	specular: 19;
-	reflective: 0.5;
-	color: #FF43AC;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -1, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -1, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -1, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -1, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -1, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -1, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 1, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 1, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 1.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 2.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 3.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 4.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 5.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: -3.5, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: -3.5, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
+}
+
+cone:
+{
+	position: 3.5, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 1;
+	color: #FFFFFF;
+}
+
+cylinder:
+{
+	position: 3.5, 0, 6.5;
+	direction: 0, 1, 0;
+	radius: 0.15;
+	color: #FFFFFF;
 }

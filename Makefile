@@ -1,7 +1,7 @@
 NAME =				RTv1
 
 CFLAGS =			-Wall -Wextra -Werror
-MLXFLAGS =			-lmlx -framework OpenGL -framework AppKit
+MLXFLAGS =			-framework OpenGL -framework AppKit
 
 VECTORS =			vec_normalize.c			\
 					vec_mult_num.c			\
@@ -43,9 +43,9 @@ SRC_PATH =			source/
 
 INCL_PATH =			-I include
 LIBFT_INCL_PATH =	-I libft/includes
-MLX_INCL_PATH =		-I /usr/local/include
+MLX_INCL_PATH =		-I minilibx/
 
-MLX_LIB =			-L /usr/local/lib
+MLX_PATH =			minilibx/
 LIBFT_PATH =		libft/
 
 LIBS =				$(INCL_PATH) $(LIBFT_INCL_PATH) $(MLX_INCL_PATH)
@@ -58,13 +58,13 @@ vpath %.c $(SRC_PATH)vectors
 vpath %.c $(SRC_PATH)args_check
 vpath %.c $(SRC_PATH)scene_reader
 
-.PHONY: all lib re clean fclean
+.PHONY: all lib mlx re clean fclean
 
-all: lib $(NAME)
+all: lib mlx $(NAME)
 	@printf "\033[32mRTv1 ready!\033[0m\n"
 
 $(NAME): $(OBJ)
-	@gcc $(CFLAGS) $^ $(LIBS) $(MLX_LIB) $(LIBFT_PATH)libft.a $(MLXFLAGS) -o $(NAME)
+	@gcc $(CFLAGS) $^ $(LIBS) $(MLX_LIB) $(LIBFT_PATH)libft.a $(MLX_PATH)libmlx.a $(MLXFLAGS) -o $(NAME)
 
 $(OBJ): $(SRC)
 	@gcc $(CFLAGS) -c $^ $(LIBS)
@@ -74,12 +74,16 @@ lib:
 	@make -C $(LIBFT_PATH) clean
 	@printf "\033[32mLibFT ready!\033[0m\n"
 
+mlx:
+	@make -C $(MLX_PATH) 
+
 clean:
 	@rm -f $(OBJ)
 	@printf "\033[33mObj files removed!\033[0m\n"
 
 fclean:
 	@make -C $(LIBFT_PATH) fclean
+	@make -C $(MLX_PATH) clean
 	@rm -f $(NAME)
 	@rm -f $(OBJ)
 	@printf "\033[31mRTv1 removed!\033[0m\n"
