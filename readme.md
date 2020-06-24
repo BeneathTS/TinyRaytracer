@@ -4,7 +4,7 @@ Works on <u>MacOS 10.12 / 10.13</u>
 
 ### Install: 
 
-`git clone https://github.com/BeneathTS/rtv1.git`
+`git clone https://github.com/BeneathTS/TinyRaytracer.git`
 
 then
 
